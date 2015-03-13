@@ -9,25 +9,19 @@
 import Cocoa
 
 class StatusBarView: NSView {
-
-    private(set) var image: NSImage
-    private let item: NSStatusItem
     
-    var onMouseDown: () -> ()
+    private let image: NSImage
+    private let statusItem: NSStatusItem
+    private let popover: NSPopover
     
-    var isSelected: Bool{
-        didSet {
-            if (isSelected != oldValue) {
-                self.needsDisplay = true
-            }
-        }
-    }
+    private var popoverTransiencyMonitor: AnyObject?
     
-    init(imageName: String, item: NSStatusItem){
-        self.image = NSImage(named: imageName)!
-        self.item = item
-        self.isSelected = false
-        self.onMouseDown = {}
+    init(image: NSImage, statusItem: NSStatusItem, popover: NSPopover){
+        self.image = image
+        self.statusItem = statusItem
+        self.popover = popover
+        
+        self.popoverTransiencyMonitor = nil
         
         let thickness = NSStatusBar.systemStatusBar().thickness
         let rect = CGRectMake(0, 0, thickness, thickness)
@@ -41,8 +35,8 @@ class StatusBarView: NSView {
     
     
     override func drawRect(dirtyRect: NSRect){
-        self.item.drawStatusBarBackgroundInRect(dirtyRect, withHighlight: self.isSelected)
-        
+        self.statusItem.drawStatusBarBackgroundInRect(dirtyRect, withHighlight: false)
+
         let size = self.image.size
         let rect = CGRectMake(2, 2, size.width, size.height)
         
@@ -50,8 +44,29 @@ class StatusBarView: NSView {
     }
     
     override func mouseDown(theEvent: NSEvent){
-        self.isSelected = !self.isSelected;
-        self.onMouseDown();
+        openPopover()
+    }
+    
+    func openPopover(){
+        if (self.popoverTransiencyMonitor == nil) {
+            
+            self.popover.showRelativeToRect(self.frame, ofView: self, preferredEdge: NSMinYEdge)
+            
+            self.popoverTransiencyMonitor = NSEvent.addGlobalMonitorForEventsMatchingMask(
+                NSEventMask.LeftMouseUpMask, handler: { (event: NSEvent!) -> Void in
+                self.closePopover()
+            })
+        }
+    }
+    
+    func closePopover(){
+        if (self.popoverTransiencyMonitor != nil) {
+            
+            self.popover.close()
+            
+            NSEvent.removeMonitor(self.popoverTransiencyMonitor!)
+            self.popoverTransiencyMonitor = nil
+        }
     }
     
 }

@@ -4,28 +4,51 @@
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6751"/>
     </dependencies>
     <objects>
-        <customObject id="-2" userLabel="File's Owner" customClass="MenuViewController" customModule="BingPaper" customModuleProvider="target"/>
+        <customObject id="-2" userLabel="File's Owner"/>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customObject id="rdI-Bp-mlh" customClass="AppDelegate" customModule="BingPaper" customModuleProvider="target">
             <connections>
-                <outlet property="popover" destination="InE-c0-daP" id="Rpb-TW-VGD"/>
+                <outlet property="popover" destination="0WD-1k-8Xa" id="4dT-0T-XyF"/>
             </connections>
         </customObject>
         <customObject id="XW9-IT-P7a" customClass="NSFontManager"/>
         <customView id="7xe-pE-msc">
             <rect key="frame" x="0.0" y="0.0" width="195" height="243"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-            <point key="canvasLocation" x="76.5" y="374.5"/>
+            <subviews>
+                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EtJ-Ol-Cb2">
+                    <rect key="frame" x="64" y="8" width="66" height="32"/>
+                    <buttonCell key="cell" type="push" title="Quit" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Hr4-sd-meE">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="quit:" target="yPt-f7-kZe" id="cbm-5B-tQn"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tye-0u-m7e">
+                    <rect key="frame" x="55" y="104" width="85" height="32"/>
+                    <buttonCell key="cell" type="push" title="Today !" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="jDq-jy-kaQ">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="today:" target="yPt-f7-kZe" id="nGQ-mz-SPt"/>
+                    </connections>
+                </button>
+            </subviews>
+            <point key="canvasLocation" x="3.5" y="318.5"/>
         </customView>
-        <viewController id="nc2-Wi-aei" userLabel="Popover View Controller">
+        <customObject id="yPt-f7-kZe" customClass="MenuViewController" customModule="BingPaper" customModuleProvider="target"/>
+        <viewController id="F95-OJ-xb7" userLabel="Popover View Controller">
             <connections>
-                <outlet property="view" destination="7xe-pE-msc" id="rp2-Jl-YvJ"/>
+                <outlet property="view" destination="7xe-pE-msc" id="JcF-ek-hif"/>
             </connections>
         </viewController>
-        <popover id="InE-c0-daP">
+        <popover id="0WD-1k-8Xa">
             <connections>
-                <outlet property="contentViewController" destination="nc2-Wi-aei" id="c2x-of-hCe"/>
+                <outlet property="contentViewController" destination="F95-OJ-xb7" id="AsI-0J-Fd2"/>
             </connections>
         </popover>
     </objects>
