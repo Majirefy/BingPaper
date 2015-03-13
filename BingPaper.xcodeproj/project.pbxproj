@@ -1,0 +1,412 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		763C22AA1AB2DCC000BACA07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763C22A91AB2DCC000BACA07 /* AppDelegate.swift */; };
+		763C22AC1AB2DCC000BACA07 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763C22AB1AB2DCC000BACA07 /* ViewController.swift */; };
+		763C22AE1AB2DCC000BACA07 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 763C22AD1AB2DCC000BACA07 /* Images.xcassets */; };
+		763C22B11AB2DCC000BACA07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 763C22AF1AB2DCC000BACA07 /* Main.storyboard */; };
+		763C22BD1AB2DCC000BACA07 /* BingPaperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763C22BC1AB2DCC000BACA07 /* BingPaperTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		763C22B71AB2DCC000BACA07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 763C229C1AB2DCC000BACA07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 763C22A31AB2DCC000BACA07;
+			remoteInfo = BingPaper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		763C22A41AB2DCC000BACA07 /* BingPaper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BingPaper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		763C22A81AB2DCC000BACA07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		763C22A91AB2DCC000BACA07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		763C22AB1AB2DCC000BACA07 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		763C22AD1AB2DCC000BACA07 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		763C22B01AB2DCC000BACA07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		763C22B61AB2DCC000BACA07 /* BingPaperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BingPaperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		763C22BB1AB2DCC000BACA07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		763C22BC1AB2DCC000BACA07 /* BingPaperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BingPaperTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		763C22A11AB2DCC000BACA07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		763C22B31AB2DCC000BACA07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		763C229B1AB2DCC000BACA07 = {
+			isa = PBXGroup;
+			children = (
+				763C22A61AB2DCC000BACA07 /* BingPaper */,
+				763C22B91AB2DCC000BACA07 /* BingPaperTests */,
+				763C22A51AB2DCC000BACA07 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		763C22A51AB2DCC000BACA07 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				763C22A41AB2DCC000BACA07 /* BingPaper.app */,
+				763C22B61AB2DCC000BACA07 /* BingPaperTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		763C22A61AB2DCC000BACA07 /* BingPaper */ = {
+			isa = PBXGroup;
+			children = (
+				763C22A91AB2DCC000BACA07 /* AppDelegate.swift */,
+				763C22AB1AB2DCC000BACA07 /* ViewController.swift */,
+				763C22AD1AB2DCC000BACA07 /* Images.xcassets */,
+				763C22AF1AB2DCC000BACA07 /* Main.storyboard */,
+				763C22A71AB2DCC000BACA07 /* Supporting Files */,
+			);
+			path = BingPaper;
+			sourceTree = "<group>";
+		};
+		763C22A71AB2DCC000BACA07 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				763C22A81AB2DCC000BACA07 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		763C22B91AB2DCC000BACA07 /* BingPaperTests */ = {
+			isa = PBXGroup;
+			children = (
+				763C22BC1AB2DCC000BACA07 /* BingPaperTests.swift */,
+				763C22BA1AB2DCC000BACA07 /* Supporting Files */,
+			);
+			path = BingPaperTests;
+			sourceTree = "<group>";
+		};
+		763C22BA1AB2DCC000BACA07 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				763C22BB1AB2DCC000BACA07 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		763C22A31AB2DCC000BACA07 /* BingPaper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 763C22C01AB2DCC000BACA07 /* Build configuration list for PBXNativeTarget "BingPaper" */;
+			buildPhases = (
+				763C22A01AB2DCC000BACA07 /* Sources */,
+				763C22A11AB2DCC000BACA07 /* Frameworks */,
+				763C22A21AB2DCC000BACA07 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BingPaper;
+			productName = BingPaper;
+			productReference = 763C22A41AB2DCC000BACA07 /* BingPaper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		763C22B51AB2DCC000BACA07 /* BingPaperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 763C22C31AB2DCC000BACA07 /* Build configuration list for PBXNativeTarget "BingPaperTests" */;
+			buildPhases = (
+				763C22B21AB2DCC000BACA07 /* Sources */,
+				763C22B31AB2DCC000BACA07 /* Frameworks */,
+				763C22B41AB2DCC000BACA07 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				763C22B81AB2DCC000BACA07 /* PBXTargetDependency */,
+			);
+			name = BingPaperTests;
+			productName = BingPaperTests;
+			productReference = 763C22B61AB2DCC000BACA07 /* BingPaperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		763C229C1AB2DCC000BACA07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "Peng Jingwen";
+				TargetAttributes = {
+					763C22A31AB2DCC000BACA07 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					763C22B51AB2DCC000BACA07 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 763C22A31AB2DCC000BACA07;
+					};
+				};
+			};
+			buildConfigurationList = 763C229F1AB2DCC000BACA07 /* Build configuration list for PBXProject "BingPaper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 763C229B1AB2DCC000BACA07;
+			productRefGroup = 763C22A51AB2DCC000BACA07 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				763C22A31AB2DCC000BACA07 /* BingPaper */,
+				763C22B51AB2DCC000BACA07 /* BingPaperTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		763C22A21AB2DCC000BACA07 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				763C22AE1AB2DCC000BACA07 /* Images.xcassets in Resources */,
+				763C22B11AB2DCC000BACA07 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		763C22B41AB2DCC000BACA07 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		763C22A01AB2DCC000BACA07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				763C22AC1AB2DCC000BACA07 /* ViewController.swift in Sources */,
+				763C22AA1AB2DCC000BACA07 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		763C22B21AB2DCC000BACA07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				763C22BD1AB2DCC000BACA07 /* BingPaperTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		763C22B81AB2DCC000BACA07 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 763C22A31AB2DCC000BACA07 /* BingPaper */;
+			targetProxy = 763C22B71AB2DCC000BACA07 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		763C22AF1AB2DCC000BACA07 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				763C22B01AB2DCC000BACA07 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		763C22BE1AB2DCC000BACA07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		763C22BF1AB2DCC000BACA07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		763C22C11AB2DCC000BACA07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = BingPaper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		763C22C21AB2DCC000BACA07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = BingPaper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		763C22C41AB2DCC000BACA07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BingPaperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BingPaper.app/Contents/MacOS/BingPaper";
+			};
+			name = Debug;
+		};
+		763C22C51AB2DCC000BACA07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BingPaperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BingPaper.app/Contents/MacOS/BingPaper";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		763C229F1AB2DCC000BACA07 /* Build configuration list for PBXProject "BingPaper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				763C22BE1AB2DCC000BACA07 /* Debug */,
+				763C22BF1AB2DCC000BACA07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		763C22C01AB2DCC000BACA07 /* Build configuration list for PBXNativeTarget "BingPaper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				763C22C11AB2DCC000BACA07 /* Debug */,
+				763C22C21AB2DCC000BACA07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		763C22C31AB2DCC000BACA07 /* Build configuration list for PBXNativeTarget "BingPaperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				763C22C41AB2DCC000BACA07 /* Debug */,
+				763C22C51AB2DCC000BACA07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 763C229C1AB2DCC000BACA07 /* Project object */;
+}
