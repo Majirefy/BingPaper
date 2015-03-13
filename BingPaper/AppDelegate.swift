@@ -12,15 +12,36 @@ import Cocoa
 class AppDelegate: NSObject, NSApplicationDelegate {
 
 
+    @IBOutlet weak var popover: NSPopover!
 
-    func applicationDidFinishLaunching(aNotification: NSNotification) {
-        // Insert code here to initialize your application
+    
+    private let statusbarview: StatusBarView;
+    
+    override init(){
+        
+        let statusItem = NSStatusBar.systemStatusBar().statusItemWithLength(-1);
+
+        self.statusbarview = StatusBarView(imageName: "icon", item: statusItem);
+        statusItem.view = statusbarview;
+
+        super.init()
     }
+    
+    override func awakeFromNib(){
+    
+        let edge = NSMinYEdge
+        let menu = self.statusbarview
+        let rect = menu.frame
+        
+        menu.onMouseDown = {
+            if (menu.isSelected){
+                self.popover?.showRelativeToRect(rect, ofView: self.statusbarview, preferredEdge: edge);
+                return
+            }
+            self.popover?.close()
+        }
 
-    func applicationWillTerminate(aNotification: NSNotification) {
-        // Insert code here to tear down your application
     }
-
 
 }
 
