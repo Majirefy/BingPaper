@@ -27,8 +27,18 @@
                         <action selector="quit:" target="yPt-f7-kZe" id="cbm-5B-tQn"/>
                     </connections>
                 </button>
+                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5qA-PN-DIZ">
+                    <rect key="frame" x="55" y="89" width="85" height="18"/>
+                    <buttonCell key="cell" type="check" title="Dock Icon" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="2R1-3a-BMH">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="toggleDockIcon:" target="yPt-f7-kZe" id="Us8-Ud-QAV"/>
+                    </connections>
+                </button>
                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tye-0u-m7e">
-                    <rect key="frame" x="55" y="104" width="85" height="32"/>
+                    <rect key="frame" x="55" y="127" width="85" height="32"/>
                     <buttonCell key="cell" type="push" title="Today !" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="jDq-jy-kaQ">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="system"/>

@@ -60,4 +60,14 @@ class MenuViewController: NSViewController {
         }
 
     }
+    
+    @IBAction func toggleDockIcon(sender: NSButton) {
+        
+        if sender.state == 1 {
+            NSApp.setActivationPolicy(NSApplicationActivationPolicy.Regular)
+        } else {
+            NSApp.setActivationPolicy(NSApplicationActivationPolicy.Accessory)
+        }
+
+    }
 }

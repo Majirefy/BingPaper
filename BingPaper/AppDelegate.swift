@@ -21,5 +21,4 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         statusItem.view = StatusBarView(image: NSImage(named: "StatusBarIcon")!, statusItem: statusItem, popover: self.popover)
         
     }
-
 }

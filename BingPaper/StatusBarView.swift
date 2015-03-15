@@ -44,29 +44,22 @@ class StatusBarView: NSView {
     }
     
     override func mouseDown(theEvent: NSEvent){
-        openPopover()
-    }
-    
-    func openPopover(){
         if (self.popoverTransiencyMonitor == nil) {
             
             self.popover.showRelativeToRect(self.frame, ofView: self, preferredEdge: NSMinYEdge)
             
             self.popoverTransiencyMonitor = NSEvent.addGlobalMonitorForEventsMatchingMask(
                 NSEventMask.LeftMouseUpMask, handler: { (event: NSEvent!) -> Void in
-                self.closePopover()
+
+                    NSEvent.removeMonitor(self.popoverTransiencyMonitor!)
+                    self.popoverTransiencyMonitor = nil
+                    self.popover.close()
             })
-        }
-    }
-    
-    func closePopover(){
-        if (self.popoverTransiencyMonitor != nil) {
-            
-            self.popover.close()
+        } else {
             
             NSEvent.removeMonitor(self.popoverTransiencyMonitor!)
             self.popoverTransiencyMonitor = nil
+            self.popover.close()
         }
     }
-    
 }
