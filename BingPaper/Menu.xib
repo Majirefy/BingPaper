@@ -14,21 +14,11 @@
         </customObject>
         <customObject id="XW9-IT-P7a" customClass="NSFontManager"/>
         <customView id="7xe-pE-msc">
-            <rect key="frame" x="0.0" y="0.0" width="195" height="243"/>
+            <rect key="frame" x="0.0" y="0.0" width="200" height="250"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
-                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EtJ-Ol-Cb2">
-                    <rect key="frame" x="64" y="8" width="66" height="32"/>
-                    <buttonCell key="cell" type="push" title="Quit" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Hr4-sd-meE">
-                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                        <font key="font" metaFont="system"/>
-                    </buttonCell>
-                    <connections>
-                        <action selector="quit:" target="yPt-f7-kZe" id="cbm-5B-tQn"/>
-                    </connections>
-                </button>
                 <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5qA-PN-DIZ">
-                    <rect key="frame" x="55" y="89" width="85" height="18"/>
+                    <rect key="frame" x="55" y="54" width="85" height="18"/>
                     <buttonCell key="cell" type="check" title="Dock Icon" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="2R1-3a-BMH">
                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                         <font key="font" metaFont="system"/>
@@ -37,8 +27,16 @@
                         <action selector="toggleDockIcon:" target="yPt-f7-kZe" id="Us8-Ud-QAV"/>
                     </connections>
                 </button>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o2v-Zn-xFQ">
+                    <rect key="frame" x="84" y="189" width="95" height="22"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Bing Paper" id="VwN-ZN-Spn">
+                        <font key="font" metaFont="system" size="18"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tye-0u-m7e">
-                    <rect key="frame" x="55" y="127" width="85" height="32"/>
+                    <rect key="frame" x="55" y="115" width="85" height="32"/>
                     <buttonCell key="cell" type="push" title="Today !" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="jDq-jy-kaQ">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="system"/>
@@ -47,8 +45,32 @@
                         <action selector="today:" target="yPt-f7-kZe" id="nGQ-mz-SPt"/>
                     </connections>
                 </button>
+                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9QN-u1-tfF">
+                    <rect key="frame" x="49" y="79" width="103" height="18"/>
+                    <buttonCell key="cell" type="check" title="Auto Change" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="y0Q-9f-tFq">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="toggleAutoChange:" target="yPt-f7-kZe" id="9Rg-tt-xgc"/>
+                    </connections>
+                </button>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="md7-xL-vYN">
+                    <rect key="frame" x="17" y="170" width="61" height="60"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="AppIcon" id="2NM-Vr-uW3"/>
+                </imageView>
+                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EtJ-Ol-Cb2">
+                    <rect key="frame" x="85" y="0.0" width="30" height="30"/>
+                    <buttonCell key="cell" type="bevel" title="✖️" bezelStyle="rounded" alignment="center" imageScaling="proportionallyDown" inset="2" id="Hr4-sd-meE">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="quit:" target="yPt-f7-kZe" id="cbm-5B-tQn"/>
+                    </connections>
+                </button>
             </subviews>
-            <point key="canvasLocation" x="3.5" y="318.5"/>
+            <point key="canvasLocation" x="3" y="330"/>
         </customView>
         <customObject id="yPt-f7-kZe" customClass="MenuViewController" customModule="BingPaper" customModuleProvider="target"/>
         <viewController id="F95-OJ-xb7" userLabel="Popover View Controller">
@@ -62,4 +84,7 @@
             </connections>
         </popover>
     </objects>
+    <resources>
+        <image name="AppIcon" width="128" height="128"/>
+    </resources>
 </document>

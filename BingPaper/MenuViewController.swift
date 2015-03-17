@@ -10,11 +10,39 @@ import Cocoa
 
 class MenuViewController: NSViewController {
 
+    var isAutoChangeOn: Bool = true;
+    var isDockIconOn: Bool = true;
+    
     @IBAction func quit(sender: NSButton) {
         NSApplication.sharedApplication().terminate(nil)
     }
     
     @IBAction func today(sender: NSButton) {
+        self.fetchAndChangeWallpaper()
+    }
+    
+    @IBAction func toggleAutoChange(sender: NSButton) {
+        if sender.state == 1 {
+            self.isAutoChangeOn = true;
+            
+        } else {
+            self.isAutoChangeOn = false;
+        }
+    }
+    
+    @IBAction func toggleDockIcon(sender: NSButton) {
+        
+        if sender.state == 1 {
+            self.isDockIconOn = true
+            NSApp.setActivationPolicy(NSApplicationActivationPolicy.Regular)
+            
+        } else {
+            self.isDockIconOn = false
+            NSApp.setActivationPolicy(NSApplicationActivationPolicy.Accessory)
+        }
+    }
+    
+    func fetchAndChangeWallpaper(){
         
         var netRequest = NSMutableURLRequest()
         netRequest.cachePolicy = NSURLRequestCachePolicy.UseProtocolCachePolicy
@@ -53,20 +81,8 @@ class MenuViewController: NSViewController {
                         options: nil,
                         error: nil
                     )
-                
-//                    NSFileManager.defaultManager().removeItemAtPath(path, error: nil)
                 }
             }
-        }
-
-    }
-    
-    @IBAction func toggleDockIcon(sender: NSButton) {
-        
-        if sender.state == 1 {
-            NSApp.setActivationPolicy(NSApplicationActivationPolicy.Regular)
-        } else {
-            NSApp.setActivationPolicy(NSApplicationActivationPolicy.Accessory)
         }
 
     }
