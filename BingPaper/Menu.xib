@@ -60,13 +60,23 @@
                     <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="AppIcon" id="2NM-Vr-uW3"/>
                 </imageView>
                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EtJ-Ol-Cb2">
-                    <rect key="frame" x="85" y="0.0" width="30" height="30"/>
-                    <buttonCell key="cell" type="bevel" title="✖️" bezelStyle="rounded" alignment="center" imageScaling="proportionallyDown" inset="2" id="Hr4-sd-meE">
+                    <rect key="frame" x="101" y="0.0" width="50" height="32"/>
+                    <buttonCell key="cell" type="bevel" title="Quit" bezelStyle="rounded" alignment="center" imageScaling="proportionallyDown" inset="2" id="Hr4-sd-meE">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="system"/>
                     </buttonCell>
                     <connections>
                         <action selector="quit:" target="yPt-f7-kZe" id="cbm-5B-tQn"/>
+                    </connections>
+                </button>
+                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mFw-a6-vbi">
+                    <rect key="frame" x="55" y="0.0" width="50" height="32"/>
+                    <buttonCell key="cell" type="bevel" title="About" bezelStyle="rounded" alignment="center" imageScaling="proportionallyDown" inset="2" id="6M6-Uk-yrH">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="about:" target="yPt-f7-kZe" id="jEj-8N-6bk"/>
                     </connections>
                 </button>
             </subviews>

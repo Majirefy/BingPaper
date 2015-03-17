@@ -13,6 +13,10 @@ class MenuViewController: NSViewController {
     var isAutoChangeOn: Bool = true;
     var isDockIconOn: Bool = true;
     
+    @IBAction func about(sender: NSButton) {
+        NSApplication.sharedApplication().orderFrontStandardAboutPanel(self)
+    }
+    
     @IBAction func quit(sender: NSButton) {
         NSApplication.sharedApplication().terminate(nil)
     }
